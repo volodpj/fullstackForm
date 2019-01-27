@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Fullstack form</h1>
+    <form action="" name="registrationUserForm" id="registrationUserForm">
+        
+        <div class="inputBox">
+            <label for="firstName">Імя</label>
+            <input type="text" data-rule="required notTa" name="firstName" id="firstName" placeholder="Імя">
+            <div class="message"></div>
+        </div>
+        
+        <div class="inputBox">
+            <label for="lastName">Прізвище </label>
+            <input type="text" data-rule="required notTa" name="lastName" id="lastName" placeholder="Прізвище">
+            <div class="message"></div>
+        </div>
+
+        <div class="inputBox">
+            <label for="birthday">Дата народження </label>
+            <input type="date" data-rule="required" name="birthday" id="birthday">
+            <div class="message"></div>
+        </div>
+
+        <div class="inputBox">
+            <p>Виберіть стать</p>
+            <label><input type="radio" name="gender" value="man" data-rule="required" checked>Чоловіча</label>
+            <label><input type="radio" name="gender" value="woman" data-rule="required"> Жіноча</label>
+            <div class="message"></div>
+        </div>
+
+        <div class="inputBox">
+            <label for="country">Країна</label>
+            <select name="country" id="country" data-rule="required">
+                <option value="UK">Україна</option>
+                <option value="Englihs">Англія</option>
+            </select>
+            <div class="message"></div>
+        </div>
+        
+        <div class="inputBox">
+            <label for="email">Електронна пошта</label>
+            <input type="email" name="email" id="email" placeholder="email" data-rule="required email">
+            <div class="message"></div>
+        </div>
+
+        <div class="inputBox">
+            <label for="password">Введіть пароль</label>
+            <input type="password" name="password" id="password" data-rule="required">
+            <div class="message"></div>
+        </div>
+
+        <div class="inputBox">
+            <label for="adress">Введіть адресу</label>
+            <input type="text" name="adress" id="adress" data-rule="required notTa">
+            <div class="message"></div>
+        </div>
+
+        <div class="inputBox">
+            <label for="notes">Примітки</label>
+            <textarea name="notes" id="notes" cols="30" rows="5" data-rule="notTa"></textarea>
+            <div class="message"></div>
+        </div>
+        
+        <button id="btn">submit</button>
+    </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

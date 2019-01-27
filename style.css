@@ -1,0 +1,35 @@
+.message{
+    height: 25px;
+    color: red;
+    font-style: italic;
+}
+
+.inputBox{
+    margin-bottom: 10px;
+}
+
+.error{
+    border: 2px solid red;
+}
+
+.notError{
+    border: 2px solid green;
+}
+
+
+input[type=text], input[type=password], input[type=email], input[type=date], select{
+    border: none;
+    border-radius: 9px;
+    height: 24px;
+    width: 300px;
+    background-color: darkgray;
+    padding: 5px;
+    outline:none;
+}
+
+label{
+    display: block;
+    width: 500px;
+    margin-right: 10px;
+}
+
